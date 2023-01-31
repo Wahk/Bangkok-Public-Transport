@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bangkok Public Transport</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+        
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f6f6f6;
+            min-width: 230px;
+            overflow: auto;
+            border: 1px solid #ddd;
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: rgb(37, 27, 227);
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown a:hover {background-color: #ddd;}
+
+        .show {display: block;}
+        .bottom-right {
+          position: absolute;
+          bottom: 8px;
+          right: 16px;
+        }
+        .fade {
+          animation-name: fade;
+          animation-duration: 1.5s;
+        }
+
+        @keyframes fade {
+          from {opacity: .4} 
+          to {opacity: 1}
+        }
+        .bottom-right {
+          position: absolute;
+          bottom: 8px;
+          right: 16px;
+        }
+
+        .centered {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+                
+</style>
+</head>
+<body>
+  
+  
+      
+    <nav class="navbar-expand-lg fixed-top">
+      <header class="p-3 bg-dark text-white">
+        <div class="container-fluid container-lg"><!-- sm md lg xl xxl -->
+          <a class="navbar-brand" href="#"></a>
+          <!--<img src="" width"30 height = "24">-->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="#Bangkok public transport">Bangkok Transport&nbsp;&nbsp;&nbsp;&nbsp;</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#Bangkok public transport">Home&nbsp;&nbsp;&nbsp;&nbsp;</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#Types of transport">Types&nbsp;&nbsp;&nbsp;&nbsp;</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Service</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="Service Routes.jpg" target="_blank">Service Routes </a></li>
+
+                  <li><a class="dropdown-item" href="contract.html" target="_blank">Contract</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="Connection point.html" target="_blank">จุดเชื่อมต่อสถานี | Connection point</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" target="_blank">
+                  &nbsp;&nbsp;&nbsp;&nbsp;For user
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="https://docs.google.com/forms/d/e/1FAIpQLScF_55SVyWRzpeBriMPHK3gG5Mr4HQzn-XVux9TICV4cMM6pQ/viewform" target="_blank">แบบประเมินความพึงพอใจ | User Satisfaction Survey</a></li>
+                  
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header> 
+    </nav>   
+
+     
+    
+
+      <!-- Hero -->
+      <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+        <div class="col-lg-7 p-3 p-lg-5 pt-lg-3" id="Bangkok public transport">
+          <h1 class="display-4 fw-bold lh-1">Bangkok public transport </h1>
+          <p class="lead"><br>-- how to get around the city? -- <br><br>In a huge city like Bangkok there are many different ways to get from A to B. In order to get along with that kind of chaos, we put together a transportation guide with times and prices for you. We hope it helps you to find your way through this amazing city.</p>
+        </div>
+      <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">        
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" >  
+          <div class="carousel-inner">
+
+             <div class="carousel-item active">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Makkasan_Interchange_at_night_by_Mark_Fischer.jpg/1200px-Makkasan_Interchange_at_night_by_Mark_Fischer.jpg" alt="..." width="720">
+            </div>
+            <div class="carousel-item active">
+              <img src="BKK 1.jpg" alt="..." width="720">
+            </div> 
+
+            <!-- <div class="carousel-item active container ">
+              <video width="720" height="472" controls autoplay>
+                <source src="BKK video 1.mp4" type="video/mp4">
+              </video>
+              <div class="bottom-right">credit : videvo.net</div>
+            </div> -->
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        
+        
+      </div>
+      </div>
+      <!-- End Hero -->
+
+      <!-- Features -->
+
+
+      <div class="container px-4 py-5" id="Types of transport">
+        <h2 class="pb-2 border-bottom">Types of transport </h2>
+    
+        <div class="row row-cols-2 row-cols-lg-2 align-items-stretch g-4 py-5">
+          <div class="col">
+
+            <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('https://res.klook.com/image/upload/fl_lossy.progressive,q_65/w_800/activities/l9qhi0qknmogmpsvnuwr.webp');">
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+
+                <a class="nav-link" href="index2ARL.html"><h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"><br>ARL </h2><h4>Airport Rail Link</h4></a>
+
+                <ul class="d-flex list-unstyled mt-auto">
+                  <li class="me-auto">
+                    <br><img src="data:image/jpeg;base64,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" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('https://a.cdn-hotels.com/gdcs/production4/d124/4f2c7b3c-917b-464b-8986-7554a393d716.jpg?impolicy=fcrop&w=800&h=533&q=medium');">
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                <a class="nav-link" href="index2MRT.html"><h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"><br>MRT </h2></a><h4>Underground Subway Tube</h4>
+                <ul class="d-flex list-unstyled mt-auto">
+                  <li class="me-auto">
+                    <img src="https://www.pinclipart.com/picdir/middle/132-1320600_open-mrt-bangkok-logo-clipart.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('https://media.istockphoto.com/id/1147609551/photo/sky-train-on-cityscape-background.jpg?s=612x612&w=0&k=20&c=kojYfCYueKC85zeHaPV4wXypQtCVKJrgsQv0ekyjwbc=');">
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                <a class="nav-link" href="index2BTS.html"><h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"> <br>BTS </h2><h4>Skytrain</h4></a>
+                <ul class="d-flex list-unstyled mt-auto">
+                  <li class="me-auto">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRViAQnoATYrKR4HUz56ED2TpJ_oDljEYFKqw&usqp=CAU" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('รถไฟ.jpg');">
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                <a class="nav-link" href="index2TRAIN.html"><h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"> <br>SRTET </h2><h4>State railway of thailand</h4></a>
+                <ul class="d-flex list-unstyled mt-auto">
+                  <li class="me-auto">
+                    <br><img src="รฟท.jpg" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <!-- End Features -->
+
+
+      <div class="container px-4 py-5" id="Types of transport">
+        <h2 class="pb-2 border-bottom">Bangkok</h2>
+
+      <div class="container p-3">
+        <center>
+          <video width="1080" height="720" autoplay loop muted>
+            <source src="BKK video 1.mp4" type="video/mp4" >
+          </video>
+        </center>
+        <div class="col-md-6 offset-md-5 text-end ">
+          <strong>credit : </strong>www.videvo.net
+        </div>
+      </div>
+      
+        
+
+      <!-- Product -->
+      <div class="container py-4">
+        <header class="pb-3 mb-4 border-bottom">
+          <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+         
+          </a>
+        </header>
+    
+        
+        <div class="row align-items-md-stretch">
+          <div class="col-md-6">
+            <div class="h-100 p-5 text-bg-dark rounded-3">
+              <h2>Service</h2>
+              <p>For your convenience.
+                <br>เพิ่มเติมข้อมูลต่างๆ เพื่ออำนวยความสะดวก
+              </p>
+              <div class="mb-5">
+                <a href="Service Routes.jpg" class="btn btn-outline-light" target="_blank">Service Routes</a>
+
+                <a href="contract.html" class="btn btn-outline-light">Contract</a>
+
+                <a href="Connection point.html" class="btn btn-outline-light"
+                >Connection point</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="h-100 p-5 bg-light border rounded-3">
+              <h2>For user</h2>
+              <p>To user who use this website you can do the satisfaction survey or suggest your opinions. 
+                <br>ท่านที่ใช้เว็บไซต์นี้สามารถประเมินความพึงพอใจหรือเสนอแนะข้อคิดเห็นของท่านได้
+              </p>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLScF_55SVyWRzpeBriMPHK3gG5Mr4HQzn-XVux9TICV4cMM6pQ/viewform" class="btn btn-outline-secondary" target="_blank">แบบประเมินความพึงพอใจ | User Satisfaction Survey</a>
+
+            </div>
+          </div>
+        </div>
+    
+        <footer class="pt-3 mt-4 text-muted border-top">
+          © 2022 <br>
+          <strong>Web Maker Contract</strong><br>
+          <strong>Tel</strong> : 09x-xxx-xxxx <br>
+          <strong>Email</strong> : Bangkok_tansport@gmail.com
+        </footer>
+      </div>
+    <!-- End Product -->
+
+    
+    
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  const myModal = new bootstrap.Modal(document.getElementById('myModal'), options)
+</script>

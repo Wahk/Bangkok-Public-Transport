@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TRAIN</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .vertical-menu {
+            width:400px;
+            height: 350px;
+            overflow-y: auto;
+        }
+       .vertical-menu a b c {
+            background-color: #eee;
+            color: black;
+            display: block;
+            padding: 12px;
+            text-decoration: none;
+        }                
+        .vertical-menu a b c :hover {
+            background-color: #ccc;
+        }
+
+      
+        .navbar{
+            background-color: #74EBD5;
+            background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+        }
+        .btn-space{
+            margin-right: 15px;
+        }
+        .text-justify{
+          text-align: justify;
+        }
+
+        #hilight{
+          /*background-color: #FBAB7E;
+          background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);*/
+          background-image: url("only");
+          background-size: cover;
+          background-position: center;
+
+          color: white;
+        }
+
+        #row2 {
+          background-color: bisque;
+        }
+        #row2Left {
+          
+        }
+
+        #row3{
+          background-color: lightblue;
+        }
+
+        .bgimg {
+          background-position: center;
+          background-size: cover;
+          background-image: url("IMG_3863.jpg");
+          min-height: 100%;
+        }
+        #row3Right{
+
+        }
+        #titleOffcanvas{
+          background-color: #74EBD5;
+        }
+        .dropbtn {
+            background-color: #04AA6D;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .dropbtn:hover, .dropbtn:focus {
+            background-color: #3e8e41;
+        }
+
+        #myInput {
+            box-sizing: border-box;
+            background-image: url('searchicon.png');
+            background-position: 14px 12px;
+            background-repeat: no-repeat;
+            font-size: 16px;
+            padding: 14px 20px 12px 200px;
+            border: none;
+            border-bottom: 1px solid #ddd;
+        }
+
+        #myInput:focus {outline: 3px solid #ddd;}
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f6f6f6;
+            min-width: 230px;
+            overflow: auto;
+            border: 1px solid #ddd;
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: rgb(130, 8, 8);
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown a:hover {background-color: #ddd;}
+
+        .show {display: block;}
+
+        
+    </style>
+  </head>
+  <body>
+    
+
+    <nav class="navbar-expand-lg fixed-top">
+      <header class="p-3 bg-dark text-white">
+        <div class="container-fluid container-lg"><!-- sm md lg xl xxl -->
+          <a class="navbar-brand" href="#"></a>
+          <!--<img src="" width"30 height = "24">-->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="#Bangkok public transport">Bangkok Transport&nbsp;&nbsp;&nbsp;&nbsp;</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Home&nbsp;&nbsp;&nbsp;&nbsp;</a>
+              </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header> 
+    </nav>   
+    
+    <div><br><br><br></div>
+
+
+    
+      <div class="container-fluid container-lg">
+        <header class="bgimg w3-display-container w3-grayscale-min mt-3 p-5 rounded-3" >
+          <div class="col-md-6 offset-md-4 text-end">
+              <div class="display-6 fw-bold"></div>
+              <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">ข้อมูลสถานี | Info</button>
+                <div id="myDropdown" class="dropdown-content">
+                  <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+                  <div class="vertical-menu">
+                                <a href="sr บางซื่อ.jpg" style="color:rgb(130, 8, 8)">กลางบางซื่อ , กลางกรุงเทพอภิวัฒน์ | Bang Sue Grand , Krung Thep Aphiwat Central Terminal</b> 
+                                <a href="s จัตุ.jpg" style="color:rgb(130, 8, 8)">จตุจักร | Chatuchak</a>
+                                <a href="sวัดรี.jpg" style="color:rgb(130, 8, 8)">วัดเสมียนนาร๊ | Wat Samian Nari</a>
+                                <a href="sเขน.jpg" style="color:rgb(130, 8, 8)">บางเขน | Bang Khen</a> 
+                                <a href="sสองห้อง.jpg" style="color:rgb(130, 8, 8)">ทุ่งสองห้อง | Thung Song Hong</a>
+                                <a href="sสี่.jpg" style="color:rgb(130, 8, 8)">หลักสี่ | Laksi</a>
+                                <a href="sการเคหะ.jpg" style="color:rgb(130, 8, 8)">การเคหะ | Kan Kheha</a> 
+                                <a href="sดอน.jpg" style="color:rgb(130, 8, 8)">ดอนเมือง | Don Mueang</a>
+                                <a href="sหลักหก.jpg" style="color:rgb(130, 8, 8)">หลักหก | Lak Hok</a>
+                                <a href="sรัง.jpg" style="color:rgb(130, 8, 8)">รังสิต | Rangsit</a> 
+                                
+                                <a href="บางซื่อ.jpg" style="color:rgb(241, 6, 57)">กลางบางซื่อ , กลางกรุงเทพอภิวัฒน์ | Bang Sue Grand , Krung Thep Aphiwat Central Terminal</a> 
+                                <a href="บางซ่อน.jpg" style="color:rgb(241, 6, 57)">บางซ่อน | Bang Son</a>
+                                <a href="บางบำหรุ.jpg" style="color:rgb(241, 6, 57)">บางบำหรุ | Bang Bamru</a>
+                                <a href="ตลิ่งชัน.jpg" style="color:rgb(241, 6, 57)">ตลิ่งชัน | Taling Chan</a>
+                </div>
+              </div>
+              <div class="fs-4 mt-3"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div>
+
+              </div>
+          </div>
+        </div> <!--hilight-->
+
+        
+        <script>
+            /* When the user clicks on the button,
+            toggle between hiding and showing the dropdown content */
+            function myFunction() {
+              document.getElementById("myDropdown").classList.toggle("show");
+            }
+            
+            function filterFunction() {
+              var input, filter, ul, li, a, i;
+              input = document.getElementById("myInput");
+              filter = input.value.toUpperCase();
+              div = document.getElementById("myDropdown");
+              a = div.getElementsByTagName("a");
+              for (i = 0; i < a.length; i++) {
+                txtValue = a[i].textContent || a[i].innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                  a[i].style.display = "";
+                } else {
+                  a[i].style.display = "none";
+                }
+              }
+            }
+            </script> 
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
+
+<script>
+  const myModal = new bootstrap.Modal(document.getElementById('myModal'), options)
+</script>

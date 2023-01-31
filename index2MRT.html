@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MRT</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .vertical-menu {
+            width:400px;
+            height: 350px;
+            overflow-y: auto;
+        }
+       .vertical-menu a b c {
+            background-color: #eee;
+            color: black;
+            display: block;
+            padding: 12px;
+            text-decoration: none;
+        }                
+        .vertical-menu a b c :hover {
+            background-color: #ccc;
+        }
+
+      
+        .navbar{
+            background-color: #74EBD5;
+            background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+        }
+        .btn-space{
+            margin-right: 15px;
+        }
+        .text-justify{
+          text-align: justify;
+        }
+
+        #hilight{
+          /*background-color: #FBAB7E;
+          background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);*/
+          background-image: url("onlymrtmap.jpg");
+          background-size: cover;
+          background-position: center;
+
+          color: white;
+        }
+
+        #row2 {
+          background-color: bisque;
+        }
+        #row2Left {
+          
+        }
+
+        #row3{
+          background-color: lightblue;
+        }
+
+        .bgimg {
+          background-position: center;
+          background-size: cover;
+          background-image: url("onlymrtmap.jpg");
+          min-height: 100%;
+        }
+        #row3Right{
+
+        }
+        #titleOffcanvas{
+          background-color: #74EBD5;
+        }
+        .dropbtn {
+            background-color: #04AA6D;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .dropbtn:hover, .dropbtn:focus {
+            background-color: #3e8e41;
+        }
+
+        #myInput {
+            box-sizing: border-box;
+            background-image: url('searchicon.png');
+            background-position: 14px 12px;
+            background-repeat: no-repeat;
+            font-size: 16px;
+            padding: 14px 20px 12px 200px;
+            border: none;
+            border-bottom: 1px solid #ddd;
+        }
+
+        #myInput:focus {outline: 3px solid #ddd;}
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f6f6f6;
+            min-width: 230px;
+            overflow: auto;
+            border: 1px solid #ddd;
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: rgb(37, 27, 227);
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown a:hover {background-color: #ddd;}
+
+        .show {display: block;}
+
+        
+    </style>
+  </head>
+  <body>
+    
+
+    <nav class="navbar-expand-lg fixed-top">
+      <header class="p-3 bg-dark text-white">
+        <div class="container-fluid container-lg"><!-- sm md lg xl xxl -->
+          <a class="navbar-brand" href="#"></a>
+          <!--<img src="" width"30 height = "24">-->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="#Bangkok public transport">Bangkok Transport&nbsp;&nbsp;&nbsp;&nbsp;</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Home&nbsp;&nbsp;&nbsp;&nbsp;</a>
+              </li>
+
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header> 
+    </nav>   
+    
+    <div><br><br><br></div>
+
+
+    
+    <div class="container-fluid container-lg">
+      <header class="bgimg w3-display-container w3-grayscale-min mt-3 p-5 rounded-3" >
+        <div class="col-md-6 offset-md-4 text-end">
+            <div class="display-6 fw-bold"></div>
+            <div class="dropdown">
+              <button onclick="myFunction()" class="dropbtn">ข้อมูลสถานี | Info</button>
+              <div id="myDropdown" class="dropdown-content">
+                <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+                <div class="vertical-menu">
+                  <a href="หลักสอง.jpg"target="_blank">หลักสอง | Lak Song</a>
+                  <a href="บางแค.jpg"target="_blank">บางแค | Bang Khae</a>
+                  <a href="ภาษี.jpg"target="_blank">ภาษีเจริญ | Phasi Charoen</a>
+                  <a href="48.jpg"target="_blank">เพชรเกษม 48 | Phetkasem 48</a>
+                  <a href="บางหว้า.jpg"target="_blank">บางหว้า | Bang Wa</a>
+                  <a href="บางไผ่.jpg"target="_blank">บางไผ่ | Bang Phai</a>
+                  <a href="ท่าพระ.jpg"target="_blank">ท่าพระ | Tha Phra</a>
+                  <a href="อิสร.jpg"target="_blank">อิสรภาพ | Itsaraphap</a>
+                  <a href="สนามไชย.jpg"target="_blank">สนามไชย | Sanam Chai</a>
+                  <a href="สามยอดฟ้า.jpg"target="_blank">สามยอด | Sam Yot</a>
+                  <a href="วัดมังกร.jpg"target="_blank">วัดมังกร | Wat Mangkon</a>
+                  <a href="หัวลำ.jpg"target="_blank">หัวลำโพง | Hua Lamphong</a>
+                  <a href="สามแยก.jpg"target="_blank">สามย่าน | Sam Yan</a>
+                  <a href="สีลม.jpg"target="_blank">สีลม | Si Lom</a>
+                  <a href="ลุมพินี.jpg"target="_blank">ลุมพินี | Lumphini</a>
+                  <a href="คลองเตย.jpg"target="_blank">คลองเตย | Khlong Toei</a>
+                  <a href="สูนสิริ.jpg"target="_blank">ศูนย์การประชุมแห่งชาติสิริกิติ์ | Queen Sirikit National Convention</a>
+                  <a href="สุขุมวิท.jpg"target="_blank">สุขุมวิท | Sukhumvit</a>
+                  <a href="เพชรบุรีฟ้า.jpg"target="_blank">เพชรบุรี | Phetchaburi</a>
+                  <a href="พระราม9.jpg"target="_blank">พระราม 9 | Phra Ram 9</a>
+                  <a href="สูนวัดไทย.jpg"target="_blank">ศูนย์วัฒนธรรมแห่งประเทศไทย | Thailand Cultural Centre</a>
+                  <a href="ห้วยฟ้า.jpg"target="_blank">ห้วยขวาง | Huai Khwang</a>
+                  <a href="สุดทิสาร.jpg"target="_blank">สุทธิสาร | Sutthisan</a>
+                  <a href="รัชดาพิ.jpg"target="_blank">รัชดาภิเษก | Ratchadaphisek</a>
+                  <a href="ลาดพร้าว.jpg"target="_blank">ลาดพร้าว | Lat Phrao</a>
+                  <a href="พหลโย.jpg"target="_blank">พหลโยธิน | Phahon Yothin</a>
+                  <a href="สวนจตุ.jpg"target="_blank">สวนจตุจักร | Chatuchak Park</a>
+                  <a href="กำแพงเพชร.jpg"target="_blank">กำแพงเพชร | Kamphaeng Phet/a>
+                  <a href="บางซ่อฟ้า.jpg"target="_blank">บางซื่อ | Bang Sue</a>
+                  <a href="เตาปูน.jpg"target="_blank">เตาปูน | Tao Poon</a>
+                  <a href="บางโพ.jpg"target="_blank">บางโพ | Bang Pho</a>
+                  <a href="บางอ้อ.jpg"target="_blank">บางอ้อ | Bang O</a>
+                  <a href="บางพลัด.jpg"target="_blank">บางพลัด | Bang Phlat</a>
+                  <a href="สิรินธร.jpg"target="_blank">สิรินธร | Sirindhorn</a>
+                  <a href="บางยี่ขัน.jpg"target="_blank">บางยี่ขัน | Bang Yi Khon</a>
+                  <a href="ขุนนนท์.jpg"target="_blank">บางขุนนนท์ | Bang Khun Non</a>
+                  <a href="ไฟฉาย.jpg"target="_blank">ไฟฉาย | Fai Chai</a>
+                  <a href="จรัญ13.jpg"target="_blank">จรัญฯ 13 | Charan 13</a>
+
+
+                  <a href="คลองไผ่.jpg" target="_blank"style="color:rgb(110, 12, 174)">คลองบางไผ่ | Khong Bang Phai</a>
+                  <a href="ตลาดบางใหญ่.jpg" target="_blank"style="color:rgb(110, 12, 174)">ตลาดบางใหญ่ | Talad Bang Yai</a>
+                  <a href="สามแยก.jpg" target="_blank"style="color:rgb(110, 12, 174)">สามแยกบางใหญ่ | Sam Yaek Bang Yai</a>
+                  <a href="บางพลู.jpg" target="_blank"style="color:rgb(110, 12, 174)">บางพลู | Bang Phu</a>
+                  <a href="บางรักใหญ่.jpg" target="_blank"style="color:rgb(110, 12, 174)">บางรักใหญ่ | Bang Rak Yai</a>
+                  <a href="บางรักน้อย.jpg" target="_blank"style="color:rgb(110, 12, 174)">บางรักน้อยท่าอิฐ | Bang Rak Noi Tha It</a>
+                  <a href="ไทรม้า.jpg" target="_blank"style="color:rgb(110, 12, 174)">ไทรม้า | Sai Ma</a>
+                  <a href="สะพานพระนั่ง.jpg" target="_blank"style="color:rgb(110, 12, 174)">สะพานพระนั่งเกล้า | Phra Nang Klao Bridge</a>
+                  <a href="แยกนน1.jpg" target="_blank"style="color:rgb(110, 12, 174)">แยกนนทบุรี 1 | Yaek Nonthaburi 1</a>
+                  <a href="บางกระสอ.jpg" target="_blank"style="color:rgb(110, 12, 174)">บางกระสอ | Bang Krasor</a>
+                  <a href="ราชการนน.jpg" target="_blank"style="color:rgb(110, 12, 174)">ศูนย์ราชการนนทบุรี | Nonthaburi Civic Center </a>
+                  <a href="กระทรวงสุข.jpg" target="_blank"style="color:rgb(110, 12, 174)">กระทรวงสาธารณสุข | Ministry of Pubic Health</a>
+                  <a href="แยกติ.jpg" target="_blank"style="color:rgb(110, 12, 174)">แยกติวานนท์ | Yak Tiwanon</a>
+                  <a href="วงสว่าง.jpg" target="_blank"style="color:rgb(110, 12, 174)">วงศ์สว่าง | Wong Sawang</a>
+                  <a href="บางช่อน.jpg" target="_blank"style="color:rgb(110, 12, 174)">บางซ่อน | Bang Son</a>
+                  <a href="เตาปูน ม่วง.jpg" target="_blank"style="color:rgb(110, 12, 174)">เตาปูน | Tao Poon </a>
+
+                </div>
+              </div>
+              <div class="fs-4 mt-3"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div>
+
+              </div>
+          </div>
+        </div> <!--hilight-->
+
+        
+        <script>
+            /* When the user clicks on the button,
+            toggle between hiding and showing the dropdown content */
+            function myFunction() {
+              document.getElementById("myDropdown").classList.toggle("show");
+            }
+            
+            function filterFunction() {
+              var input, filter, ul, li, a, i;
+              input = document.getElementById("myInput");
+              filter = input.value.toUpperCase();
+              div = document.getElementById("myDropdown");
+              a = div.getElementsByTagName("a");
+              for (i = 0; i < a.length; i++) {
+                txtValue = a[i].textContent || a[i].innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                  a[i].style.display = "";
+                } else {
+                  a[i].style.display = "none";
+                }
+              }
+            }
+          </script> 
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
+
+<script>
+  const myModal = new bootstrap.Modal(document.getElementById('myModal'), options)
+</script>
